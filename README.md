@@ -8,10 +8,10 @@
 
 ```bash
 # Windows CMD
-mklink /D "%USERPROFILE%\.claude\skills" "C:\code\skills-deployed"
+mklink /D "%USERPROFILE%\.claude\skills" "C:\Repo\skills-deployed"
 
 # OR Bash
-ln -s "C:/code/skills-deployed" ~/.claude/skills
+ln -s "C:/Repo/skills-deployed" ~/.claude/skills
 ```
 
 Then in Claude Code:
@@ -23,7 +23,7 @@ Then in Claude Code:
 ### Option 2: Copy (Snapshot)
 
 ```bash
-cp -r C:\code\skills-deployed\*.md ~/.claude\skills\
+cp -r C:\Repo\skills-deployed\*.md ~/.claude\skills\
 ```
 
 ## What's Included
@@ -60,7 +60,7 @@ skills-deployed/
 Skills are deployed from the development repo.
 
 **For Developers:**
-1. Edit skill in: `C:\code\skills-development\Allvue-Skills\Tier-X\NN-SKILL\`
+1. Edit skill in: `C:\Repo\skills-development\Allvue-Skills\Tier-X\NN-SKILL\`
 2. Run: `bash _build/deploy.sh`
 3. This repo updates automatically
 
@@ -90,7 +90,7 @@ No confusion about structure, no complex setup. Just flat .md files.
 
 - **DEPLOYMENT-INDEX.md** — Complete skill reference
 - Each skill's `.md` file — Full documentation and examples
-- **Development repo** — Source code (`C:\code\skills-development`)
+- **Development repo** — Source code (`C:\Repo\skills-development`)
 
 ## Version Info
 
